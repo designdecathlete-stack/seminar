@@ -1798,6 +1798,71 @@ body {
         font-size: clamp(0.95rem, 2.5vw, 1.05rem);
         line-height: 1.7;
     }
+
+    /* STEPセクションのレイアウト調整 */
+    .strategy-step {
+        padding: 1.5rem;
+    }
+
+    .step-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .strategy-step .step-number {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.85rem;
+    }
+
+    .strategy-step .step-title {
+        font-size: clamp(1.1rem, 3.5vw, 1.35rem);
+        line-height: 1.5;
+    }
+
+    /* 講師紹介セクションの調整 */
+    .instructor-profile {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .instructor-profile.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .instructor-profile.reverse .instructor-profile-image,
+    .instructor-profile.reverse .instructor-profile-info {
+        order: 0;
+    }
+
+    .instructor-profile-image {
+        height: 250px;
+    }
+
+    .instructor-profile-info {
+        padding: 0.5rem;
+    }
+
+    .instructor-profile-name {
+        font-size: clamp(1.3rem, 4vw, 1.6rem);
+        margin-bottom: 0.5rem;
+    }
+
+    .instructor-profile-role {
+        font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+        margin-bottom: 1rem;
+    }
+
+    .instructor-profile-bio {
+        font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+        line-height: 1.8;
+    }
+
+    .instructors-synergy {
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1887,6 +1952,36 @@ body {
     .myths-paragraph,
     .conclusion-text {
         font-size: clamp(0.95rem, 2.8vw, 1.1rem);
+    }
+
+    /* 講師紹介セクションの小画面調整 */
+    .instructor-profile {
+        padding: 0.75rem;
+        gap: 1.25rem;
+    }
+
+    .instructor-profile-image {
+        height: 220px;
+    }
+
+    .instructor-profile-info {
+        padding: 0.25rem;
+    }
+
+    .instructor-profile-name {
+        font-size: clamp(1.2rem, 4vw, 1.5rem);
+    }
+
+    .instructor-profile-role {
+        font-size: clamp(0.8rem, 2.2vw, 0.9rem);
+    }
+
+    .instructor-profile-bio {
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+    }
+
+    .instructors-synergy {
+        padding: 1.25rem;
     }
 }
 
