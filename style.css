@@ -204,8 +204,8 @@ body {
 .instructor-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
+    object-position: center top;
     filter: brightness(1.1) contrast(1.1);
 }
 
@@ -984,8 +984,8 @@ body {
 .instructor-profile-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
+    object-position: center top;
     filter: brightness(1.05) contrast(1.05);
 }
 
