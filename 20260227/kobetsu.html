@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個別相談のご案内 | サロン経営特別コラボセミナー</title>
+    <meta name="description" content="セミナー参加者限定、個別相談会のご案内です。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* 個別相談ページ専用の追加調整 */
+        .consultation-main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: var(--spacing-xl) var(--spacing-md);
+            text-align: center;
+            background: linear-gradient(135deg, var(--color-black) 0%, var(--color-charcoal) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .consultation-header {
+            margin-bottom: var(--spacing-xl);
+            z-index: 10;
+        }
+
+        .consultation-title {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            color: var(--color-accent);
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px var(--color-accent-glow);
+        }
+
+        .consultation-subtitle {
+            font-size: 1rem;
+            color: var(--color-white);
+            opacity: 0.8;
+            letter-spacing: 0.05em;
+        }
+
+        /* 講師セクションの調整 */
+        .instructors-wrapper {
+            margin-bottom: var(--spacing-xl);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .instructors {
+            margin: 0;
+            padding: 2rem 0;
+            gap: 4rem;
+            /* 垂直方向の間隔を少し広めに */
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cta-box {
+            margin-top: 1.5rem;
+            z-index: 10;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .instructor-info {
+            margin-top: 0.5rem;
+        }
+
+        .instructor-name {
+            font-size: 1.1rem;
+        }
+
+        .instructor-title {
+            font-size: 0.75rem;
+        }
+
+        /* CTAボタンの強調 */
+        .cta-box {
+            z-index: 10;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .cta-button {
+            width: 100%;
+            padding: 1.25rem 2rem;
+            font-size: 1.1rem;
+            background: var(--color-accent);
+            color: var(--color-black);
+            box-shadow: 0 10px 40px var(--color-accent-glow);
+        }
+
+        /* 背景グローの調整 */
+        .accent-glow {
+            width: 400px;
+            height: 400px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="consultation-main">
+        <!-- 背景エフェクト -->
+        <div class="hero-bg"></div>
+        <div class="hero-noise"></div>
+        <div class="accent-glow"></div>
+
+        <header class="consultation-header">
+            <h1 class="consultation-title">個別相談のご案内</h1>
+            <p class="consultation-subtitle">あなたのサロンの未来を、共に描く時間。</p>
+        </header>
+
+        <section class="instructors-wrapper">
+            <div class="instructors">
+                <!-- 講師1 -->
+                <div class="instructor">
+                    <div class="instructor-image-wrapper">
+                        <img src="../images/instructor2.jpg" alt="篠崎 紗織" class="instructor-image">
+                    </div>
+                    <div class="instructor-info">
+                        <p class="instructor-name">篠崎 紗織</p>
+                        <p class="instructor-title">ブランディング・コンセプト設計</p>
+                    </div>
+                    <div class="cta-box">
+                        <a href="https://lin.ee/VHAy61N" class="cta-button primary">
+                            <span class="cta-text">篠崎 紗織に相談する</span>
+                            <span class="cta-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 講師2 -->
+                <div class="instructor">
+                    <div class="instructor-image-wrapper">
+                        <img src="../images/instructor1.png" alt="金谷 武士" class="instructor-image">
+                    </div>
+                    <div class="instructor-info">
+                        <p class="instructor-name">金谷 武士</p>
+                        <p class="instructor-title">戦略的広告運用・集客最大化</p>
+                    </div>
+                    <div class="cta-box">
+                        <a href="https://utage-system.com/r/PSA1YPELmDqB/register" class="cta-button primary">
+                            <span class="cta-text">金谷 武士に相談する</span>
+                            <span class="cta-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
